@@ -5,6 +5,8 @@ In test folder put ---->> test_app.py
  
 python app.py
 pytest -q
+docker build -t terry1010/python-ci-lab:local .
+docker run --rm terry1010/python-ci-lab:local
 
 
 git init
@@ -28,3 +30,4 @@ STEP 8 — Verify image on Docker Hub
 -----------------------------------
 
 docker.io/<DOCKERHUB_USERNAME>/python-ci-lab
+
